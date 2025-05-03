@@ -63,6 +63,7 @@ bool recurr(int board[9][9], int row, int col)
 
 int main()
 {
+    //this is random board off of newspaper
     int board[9][9] = {
         {0, 7, 0, 0, 0, 3, 0, 5, 0},
         {0, 0, 0, 0, 2, 0, 7, 0, 0},
