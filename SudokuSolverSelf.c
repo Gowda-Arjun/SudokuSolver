@@ -3,7 +3,7 @@
 
 bool check(int board[9][9], int row, int col, int num) 
 {
-    // checks for the num in row or column heheheheh
+    // checks for the num in row or column
     for (int i = 0; i < 9; i++)
     {
         if (board[row][i] == num ||board[i][col] == num) 
