@@ -3,7 +3,8 @@
 
 bool check(int board[9][9], int row, int col, int num) 
 {
-    // checks for the num in row or column TheSecondOne
+    // checks for the num in row or column
+
     for (int i = 0; i < 9; i++)
     {
         if (board[row][i] == num ||board[i][col] == num) 
@@ -46,7 +47,6 @@ bool recurr(int board[9][9], int row, int col)
     if (board[row][col]) 
         return recurr(board, row, col + 1);
 
-
     for (int num = 1; num <= 9; num++) 
     {
         if (check(board, row, col, num)) 
@@ -60,6 +60,7 @@ bool recurr(int board[9][9], int row, int col)
     }
     return false;
 }
+
 
 int main()
 {
@@ -77,5 +78,5 @@ int main()
         };
 
     recurr(board, 0, 0);
-    
+
 }
